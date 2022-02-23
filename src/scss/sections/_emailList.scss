@@ -10,4 +10,13 @@
         z-index: 999;
         padding-right: 0.625em;
     }
+    &__sections {
+        display: flex;
+        // justify-content: space-around;
+        position: sticky;
+        top: 0;
+        border-bottom: 1px solid $color-details;
+        background-color: $color-background-primary;
+        z-index: 999;
+    }
 }

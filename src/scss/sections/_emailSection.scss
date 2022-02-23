@@ -1,0 +1,22 @@
+.emailSection {
+    display: flex;
+    align-items: center;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    padding: 1em;
+    min-width: 200px;
+    border-width: 0 !important;
+    color: $color-primary;
+    // flex: 1;
+    &--selected {
+        background-color: $color-details;
+        border-width: 3px !important;
+    }
+    &:hover {
+        background-color: $color-details;
+        border-width: 3px !important;
+    }
+    & h4 {
+        margin-left: 1em;
+    }
+}
