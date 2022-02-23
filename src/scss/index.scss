@@ -1,7 +1,9 @@
 @import "settings/reset.scss";
 @import "settings/fonts";
 @import "settings/colors";
+@import "settings/mixins";
 @import "settings/base";
 
-@import "sections/header";
 
+@import "sections/header";
+@import "sections/sidebar";

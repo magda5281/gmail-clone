@@ -3,22 +3,18 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.8rem;
+  font-size: 1rem;
   font-weight: 400;
   background-color: $color-background-primary;
-  // font-family: $font-base;
-  
-  // color: $color-base;
+ @include smallScreen {
+    font-size: .8rem;
+    }
 }
 
 code {
@@ -30,8 +26,26 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
 .container{
   width: 80%;
   max-width: 1350px;
   margin: 0 auto;
+}
+
+.MuiSvgIcon-root{
+  color: $color-icons-primary;
+  @include smallScreen {
+    font-size: .8rem;
+    }
+}
+
+.MuiSvgIcon-root + .MuiSvgIcon-root {
+  margin-left: .5em;
+}
+
+.MuiAvatar-root{
+  margin-left: .5em;
 }
