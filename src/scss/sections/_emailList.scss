@@ -1,0 +1,13 @@
+.emailList {
+    flex: 1;
+    overflow: scroll;
+    &__settings {
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        background-color: $color-background-primary;
+        z-index: 999;
+        padding-right: 0.625em;
+    }
+}
