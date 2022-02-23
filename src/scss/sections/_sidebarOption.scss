@@ -1,0 +1,43 @@
+.sidebarOption {
+    display: flex;
+    align-items: center;
+    padding: 0.6em;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+
+    & .MuiSvgIcon-root {
+        font-size: 1.7rem;
+    }
+    & h3 {
+        flex: 1;
+        // can i use flexbox to position all those elements?
+        margin-left: 0.625em;
+    }
+    & p {
+        display: none;
+    }
+    &:hover p {
+        display: inline;
+    }
+
+    &:hover,
+    &:hover p,
+    &:hover h3 {
+        background-color: $color-details;
+        font-weight: 700;
+    }
+
+    &--active,
+    &--active > h3,
+    &--active > p,
+    &--active .MuiSvgIcon-root {
+        background-color: $color-background-active !important;
+        color: $color-active !important;
+        font-weight: 800 !important;
+    }
+
+    &--active > p {
+        display: inline !important;
+    }
+}

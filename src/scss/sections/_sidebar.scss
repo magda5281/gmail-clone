@@ -1,0 +1,19 @@
+.sidebar {
+    &__compose {
+        // check margins after build, umight need a div to wrap button and posision
+        margin: 1em 0.625em 1em 0.625em !important;
+        text-transform: capitalize !important;
+        font-weight: 600;
+        padding: 1em 1.2em !important;
+        border-radius: 30px !important;
+        box-shadow: 0 2px 5px -2px $color-box-shadow;
+        color: $color-primary !important;
+    }
+    &__plus {
+        font-size: 2rem !important;
+    }
+    &__footer {
+        display: flex;
+        justify-content: center;
+    }
+}
