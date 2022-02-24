@@ -1,4 +1,8 @@
 .sidebar {
+    flex: 0.3;
+    max-width: 300px;
+    padding-right: 1.25em;
+
     &__compose {
         // check margins after build, umight need a div to wrap button and posision
         margin: 1em 0.625em 1em 0.625em !important;
