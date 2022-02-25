@@ -9,7 +9,7 @@ body {
         "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 1rem;
+    font-size: clamp(0.625rem, 2.3vmin, 1rem);
     font-weight: 400;
     color: $color-primary;
     background-color: $color-background-primary;
@@ -35,8 +35,12 @@ img {
     margin: 0 auto;
 }
 
-.MuiSvgIcon-root {
-    @include smallScreen {
-        font-size: 0.8rem;
+@include smallScreen {
+    .MuiSvgIcon-root {
+        font-size: 0.8rem !important;
+    }
+    .MuiAvatar-root {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
     }
 }
