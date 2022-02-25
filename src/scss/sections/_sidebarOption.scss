@@ -10,7 +10,7 @@
     & .MuiSvgIcon-root {
         font-size: 1.7rem;
     }
-    & h3 {
+    & h2 {
         flex: 1;
         // can i use flexbox to position all those elements?
         margin-left: 0.625em;
@@ -24,13 +24,13 @@
 
     &:hover,
     &:hover p,
-    &:hover h3 {
+    &:hover h2 {
         background-color: $color-details;
         font-weight: 700;
     }
 
     &--active,
-    &--active > h3,
+    &--active > h2,
     &--active > p,
     &--active .MuiSvgIcon-root {
         background-color: $color-background-active !important;

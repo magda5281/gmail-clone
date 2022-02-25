@@ -27,7 +27,7 @@
     }
 
     &__message h4 {
-        width: 500px;
+        max-width: 400px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -38,6 +38,7 @@
         margin-left: 0.5em;
         font-weight: 400;
         color: $color-primary;
+        width: 25%;
     }
     &__time {
         margin-right: 1em;
