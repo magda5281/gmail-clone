@@ -10,16 +10,18 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: clamp(0.625rem, 2.3vmin, 1rem);
-    font-weight: 400;
     color: $color-primary;
     background-color: $color-background-primary;
-    @include smallScreen {
-        font-size: 0.8rem;
-    }
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+h3,
+h4 {
+    font-weight: 600;
+    font-size: clamp(0.8rem, 2.325vmin, 1.2rem);
 }
 
 a {
@@ -37,10 +39,19 @@ img {
 
 @include smallScreen {
     .MuiSvgIcon-root {
-        font-size: 0.8rem !important;
+        font-size: 0.9rem !important;
     }
     .MuiAvatar-root {
         width: 1.5rem !important;
         height: 1.5rem !important;
+    }
+}
+
+@include mediumScreen {
+    .MuiSvgIcon-root {
+        font-size: 1.3rem !important;
+    }
+    .MuiButtonBase-root {
+        padding: 0.1em !important;
     }
 }
