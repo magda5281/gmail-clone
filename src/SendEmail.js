@@ -2,8 +2,11 @@ import { Button } from "@material-ui/core";
 import { Close } from "@material-ui/icons";
 import React from "react";
 import { useForm } from "react-hook-form";
-import { closeSendMessage } from "./features/mailSlice";
+import { closeSendMessage } from "./features/mailSlice.js";
 import { useDispatch } from "react-redux";
+import { db } from "./firebase.js";
+import firebase from "firebase/app";
+// import { collection, addDoc } from "firebase/firestore";
 
 function SendEmail() {
     const dispatch = useDispatch();
@@ -16,6 +19,20 @@ function SendEmail() {
 
     const onSubmit = (formData) => {
         console.log(formData);
+        db.collection("emails")
+            .add({
+                to: formData.to,
+                subject: formData.subject,
+                message: formData.message,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            })
+            .then((docRef) => {
+                console.log("Document written with ID: ", docRef.id);
+            })
+            .catch((error) => {
+                console.error("Error adding document: ", error);
+            });
+        dispatch(closeSendMessage());
     };
 
     return (
