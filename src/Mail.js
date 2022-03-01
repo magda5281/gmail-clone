@@ -15,9 +15,12 @@ import {
     ExitToApp,
 } from "@material-ui/icons";
 import LabelImportant from "@material-ui/icons/LabelImportant";
-
+import { selectOpenEmail } from "./features/mailSlice";
+import { useSelector } from "react-redux";
 function Mail() {
     const navigate = useNavigate();
+    const selectedMail = useSelector(selectOpenEmail);
+
     return (
         <div className="mail">
             <div className="mail__tools">
@@ -64,17 +67,13 @@ function Mail() {
             </div>
             <div className="mail__body">
                 <div className="mail__bodyHeader">
-                    <h3>Subject</h3>
+                    <h3>{selectedMail?.subject}</h3>
                     <LabelImportant className="mail__important" />
-                    <p>Title</p>
-                    <p className="mail__time">10 pm </p>
+                    <p>{selectedMail?.title}</p>
+                    <p className="mail__time">{selectedMail?.time} </p>
                 </div>
                 <div className="mail__message">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab optio pariatur
-                        quibusdam esse earum! Aspernatur ab dolore architecto iste sunt? Repudiandae
-                        delectus quas labore cupiditate quis doloremque, quos error qui?
-                    </p>
+                    <p>{selectedMail?.description}</p>
                 </div>
             </div>
         </div>
