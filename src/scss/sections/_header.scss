@@ -4,6 +4,8 @@
     align-items: center;
     border-bottom: 1px solid $color-details;
     padding-right: 1em;
+    background-color: $color-background-primary;
+
     &__left {
         display: flex;
         align-items: center;
