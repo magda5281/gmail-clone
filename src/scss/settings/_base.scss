@@ -10,7 +10,7 @@ body {
         "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: clamp(0.625rem, 2.3vmin, 1rem);
+    font-size: clamp(0.625rem, 2vmin, 1.2rem);
     color: $color-primary;
     background-color: $color-background-primary;
 }
@@ -22,7 +22,7 @@ code {
 h3,
 h4 {
     font-weight: 600;
-    font-size: clamp(0.8rem, 2.325vmin, 1.2rem);
+    font-size: clamp(0.875rem, 2.325vmin, 1rem);
 }
 
 a {
@@ -50,7 +50,7 @@ img {
 
 @include mediumScreen {
     .MuiSvgIcon-root {
-        font-size: 1.3rem !important;
+        font-size: 1rem !important;
     }
     .MuiButtonBase-root {
         padding: 0.1em !important;

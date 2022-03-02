@@ -12,9 +12,8 @@
         gap: 0.5em;
     }
     &__left > img {
-        // object-fit: contain;
+        object-fit: contain;
         height: 12vmin;
-        // margin-left: 5px;
     }
     &__middle {
         display: flex;
@@ -35,5 +34,14 @@
         display: flex;
         align-items: center;
         gap: 0.7em;
+    }
+    & .MuiIconButton-label {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    &__logoutText {
+        font-size: 0.5rem;
+        font-weight: 600;
+        padding: 0.2em;
     }
 }
