@@ -15,7 +15,7 @@ import { auth } from "./firebase.js";
 function Header() {
     const user = useSelector(selectUser);
     const dispatch = useDispatch();
-
+    console.log(user.photo);
     const signOut = () => {
         auth.signOut().then(() => {
             dispatch(logout());

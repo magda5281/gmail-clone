@@ -14,7 +14,7 @@
     }
     &__title {
         color: $color-bold;
-        flex: 0.2;
+        flex: 0.3;
     }
     &__message {
         display: flex;
@@ -31,6 +31,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        flex: 0.6;
     }
 
     &__description {
@@ -42,5 +43,6 @@
     &__time {
         margin-right: 1em;
         font-size: 0.8rem;
+        flex: 0.2;
     }
 }

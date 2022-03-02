@@ -12,7 +12,7 @@ function SendEmail() {
     const {
         register,
         handleSubmit,
-        watch,
+        // watch,
         formState: { errors },
     } = useForm();
 
@@ -24,7 +24,7 @@ function SendEmail() {
             message: formData.message,
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
         });
-    
+
         dispatch(closeSendMessage());
     };
 
