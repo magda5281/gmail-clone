@@ -33,12 +33,12 @@ This project was created using the following technologies:
 ## Project features
 
 -   Firebase google authentication - login, logout <br>
-    ![login/logout demo](https://user-images.githubusercontent.com/80685460/156446153-8311ca3b-cd75-4bfd-9fb4-d1841b61fdf7.mp4)
 -   Firestore connected ReactForm with validation<br>
-    ![compose send email with validation](https://user-images.githubusercontent.com/80685460/156560088-feaa8d48-cb92-4151-a938-257cee260c6c.mp4)
-
 -   Redux controlled state of component <br>
-    ![controling the component state with redux](https://user-images.githubusercontent.com/80685460/156560713-4e9fc05d-82be-472e-92ae-28153f908732.mp4)
+
+
+
+https://user-images.githubusercontent.com/80685460/156571907-eac4b4bf-efe5-4075-b717-1adab55bd341.mp4
 
 --
 
