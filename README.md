@@ -1,5 +1,51 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
+##gmail-clone - React-redux app
+
+---
+
+##Hosting
+You can preview this project <a href ="https://clone-b2527.web.app/">here</a>
+
+##Overview
+
+---
+
+gmail-clone app is a portfolio personal project to further develop and learn front end technologies. Is it a website that allows users to login/logout to gmail, compose a send message which will show up in the list of emails, open the content of the email and go back to the list. The app includes elements of responsive design.
+
+##Technologies
+
+---
+
+This project was created using the following technologies:
+
+-   Sass
+-   JavaScript
+-   ReactJS
+-   Redux
+-   Firebase
+-   Material-ui
+
+    ![](https://img.icons8.com/color/48/000000/sass-avatar.png)
+    ![](https://img.icons8.com/color/48/000000/javascript--v1.png)
+    ![](https://img.icons8.com/office/40/000000/react.png)
+    ![](https://img.icons8.com/color/48/000000/redux.png")
+    ![](https://img.icons8.com/color/48/000000/firebase.png)
+    ![](https://img.icons8.com/color/48/000000/material-ui.png)
+
+---
+
+<a href="https://icons8.com/icon/vEiU8UeAmv0x/sass-avatar">Sass Avatar icon by Icons8</a>
+
+## Project features
+
+-   Firebase google authentication - login, logout
+    ![login/logout demo](https://user-images.githubusercontent.com/80685460/156446153-8311ca3b-cd75-4bfd-9fb4-d1841b61fdf7.mp4)
+-   Firestore connected ReactForm with validation
+    ![compose send email with validation](https://user-images.githubusercontent.com/80685460/156560088-feaa8d48-cb92-4151-a938-257cee260c6c.mp4)
+-   Redux controlled state of component
+    ![controling the component state with redux](https://user-images.githubusercontent.com/80685460/156560713-4e9fc05d-82be-472e-92ae-28153f908732.mp4)
+
 ## Available Scripts
 
 In the project directory, you can run:
