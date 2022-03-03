@@ -34,7 +34,7 @@ This project was created using the following technologies:
 
 -   Firebase google authentication - login, logout <br>
 -   Firestore connected ReactForm with validation<br>
--   Redux controlled state of component <br>
+-   Gmail styled interface<br>
 
 
 
