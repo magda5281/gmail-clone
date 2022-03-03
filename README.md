@@ -1,19 +1,20 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
-##gmail-clone - React-redux app
+## gmail-clone - React-redux app
 
 ---
 
-##Hosting
+## Hosting
+
 You can preview this project <a href ="https://clone-b2527.web.app/">here</a>
 
-##Overview
+## Overview
 
 ---
 
 gmail-clone app is a portfolio personal project to further develop and learn front end technologies. Is it a website that allows users to login/logout to gmail, compose a send message which will show up in the list of emails, open the content of the email and go back to the list. The app includes elements of responsive design.
 
-##Technologies
+## Technologies
 
 ---
 
